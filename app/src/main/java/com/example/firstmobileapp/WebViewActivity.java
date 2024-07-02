@@ -1,5 +1,6 @@
 package com.example.firstmobileapp;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WebViewActivity extends AppCompatActivity {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,12 +19,7 @@ public class WebViewActivity extends AppCompatActivity {
         WebView webView = findViewById(R.id.webview);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                view.loadData("Page not available", "text/html", "utf-8");
-            }
-        });
-        webView.loadUrl("https://mock-app.github.io/");
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://mock-app.github.io");
     }
 }
