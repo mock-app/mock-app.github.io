@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".OptionsActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Mock-App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#15606A"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnMockAppBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="#150337"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnMockAppFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Film"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="#150337"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnMockAppMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="#150337"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

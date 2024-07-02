@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         boolean isInserted = db.insertUser(username, password);
                         if (isInserted) {
                             Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                            navigateToWebView();
+                            navigateToOptions();
                         } else {
                             Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
                         }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     boolean isAuthenticated = db.checkUser(username, password);
                     if (isAuthenticated) {
                         Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                        navigateToWebView();
+                        navigateToOptions();
                     } else {
                         Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                     }
@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void navigateToWebView() {
-        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+    private void navigateToOptions() {
+        Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
         startActivity(intent);
     }
 }
