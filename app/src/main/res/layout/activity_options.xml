@@ -38,21 +38,22 @@
             android:padding="16dp"/>
 
         <Button
-            android:id="@+id/btnMockAppFilm"
+            android:id="@+id/btnMockAppMusic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Film"
+            android:text="Music"
             android:drawablePadding="10dp"
             android:background="@drawable/rounded_button_green"
             android:textColor="#150337"
             android:layout_marginBottom="16dp"
             android:padding="16dp"/>
 
+
         <Button
-            android:id="@+id/btnMockAppMusic"
+            android:id="@+id/btnMockAppFilm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Music"
+            android:text="Film"
             android:drawablePadding="10dp"
             android:background="@drawable/rounded_button_green"
             android:textColor="#150337"

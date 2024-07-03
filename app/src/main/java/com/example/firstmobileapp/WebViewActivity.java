@@ -20,6 +20,10 @@ public class WebViewActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://mock-app.github.io");
+
+        String url = getIntent().getStringExtra("url");
+        if (url != null) {
+            webView.loadUrl(url);
+        }
     }
 }

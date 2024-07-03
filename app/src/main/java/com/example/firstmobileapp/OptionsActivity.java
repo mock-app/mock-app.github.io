@@ -25,18 +25,21 @@ public class OptionsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OptionsActivity.this, WebViewActivity.class);
+                intent.putExtra("url", "https://mock-app.github.io/#/book");
+                startActivity(intent);
+            }
+        });
+
+        btnMockAppMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OptionsActivity.this, WebViewActivity.class);
+                intent.putExtra("url", "https://mock-app.github.io/#/music");
                 startActivity(intent);
             }
         });
 
         btnMockAppFilm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(OptionsActivity.this, "Coming soon...", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        btnMockAppMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(OptionsActivity.this, "Coming soon...", Toast.LENGTH_SHORT).show();
