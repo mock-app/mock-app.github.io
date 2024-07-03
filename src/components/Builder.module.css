@@ -1,0 +1,43 @@
+.Wrapper {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Container {
+  padding: 100px;
+  border-radius: 40px;
+  background-color: #acacac;
+  display: flex;
+  flex-direction: column;
+  color: #1b1d1f;
+}
+
+.Button {
+  margin-top: 16px;
+}
+
+.Output {
+  width: 300px;
+  border-radius: 16px;
+}
+
+.Progress {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.BookCover {
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
